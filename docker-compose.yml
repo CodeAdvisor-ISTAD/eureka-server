@@ -1,8 +1,8 @@
 version: '3.9'
 
 services:
-  eureka-server:
-    container_name: eureka-server
+  code-advisors-eureka-server:
+    container_name: code-advisors-eureka-server
     build:
       context: . # Use the current directory for building
     ports:
