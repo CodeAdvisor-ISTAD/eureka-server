@@ -10,7 +10,12 @@ services:
     #    environment:
     #      SPRING_PROFILES_ACTIVE: prod # Set Spring profile if needed
     volumes:
-      - eureka-logs:/app/logs # Optional: Map logs to a local directory
+      - code-advisors-eureka-logs:/app/logs # Optional: Map logs to a local directory
 
 volumes:
-  eureka-logs:
+  code-advisors-eureka-logs:
+
+networks:
+  default:
+    external:
+      name: code-advisors-network
