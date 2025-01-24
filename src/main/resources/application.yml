@@ -8,6 +8,9 @@ server:
 eureka:
   instance:
     hostname: localhost
+    preferIpAddress: true
+    secure-port-enabled: true
+    secure-port: 443
   client:
     register-with-eureka: false
     fetch-registry: false
